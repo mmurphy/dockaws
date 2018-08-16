@@ -7,6 +7,7 @@ docker build -t aws .
 ```
 
 ## set an alias to run the AWS CLI
+To run non-interactively in a script you may need to remove the `-it` from the `docker run` command.
 
 ```
 alias aws='docker run -it --rm -v $HOME/.aws:/root/.aws -v $PWD:/app aws'
